@@ -45,10 +45,6 @@ span, p, label {
     background-color: transparent;
 }
 
-.playground-wrapper {
-    margin: 1em 9em 1em 1em;
-}
-
 .full-width {
     width: 100%;
 }
@@ -87,7 +83,7 @@ tertiary-bg {
 
 .ms-btn {
     background-color: $default;
-    display: inline-block;
+    display: block;
     text-align: center;
     color: white;
     vertical-align: middle;
@@ -102,7 +98,6 @@ tertiary-bg {
     font-weight: 600;
     font-family: TTNormsBold;
     margin: 1em;
-    width: 100%;
 }
 
 .ms-btn-primary {
@@ -127,7 +122,6 @@ tertiary-bg {
 
 .ms-banner-card {
     background-size: cover;
-    width: 100%;
     min-height: 14em;
     border-radius: 5px;
     color: white;
@@ -143,5 +137,5 @@ tertiary-bg {
 }
 
 .ms-banner-card p {
-
+    
 }
