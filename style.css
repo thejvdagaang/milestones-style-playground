@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'TTNormsBold';
+  src: url("assets/fonts/TT Norms Pro Bold.otf"); }
+@font-face {
+  font-family: 'TTNormsRegular';
+  src: url("assets/fonts/TT Norms Pro Regular.otf"); }
+@font-face {
+  font-family: "FabricIcons";
+  src: url("assets/fonts/fabric-icons-992ac698.ttf"); }
+@-ms-viewport {
+  width: device-width; }
+html, body, p, span, div, label {
+  color: #505050;
+  line-height: 1.4;
+  font-family: 'TTNormsRegular';
+  margin: 0;
+  padding: 0;
+  background-color: #fbfbfb;
+  display: block; }
+
+span, p, label {
+  background-color: transparent; }
+
+.playground-wrapper {
+  margin: 1em 9em 1em 1em; }
+
+.full-width {
+  width: 100%; }
+
+.text-title-color {
+  color: #181818; }
+
+.subtext-color {
+  color: #58595b; }
+
+.primary-bg {
+  background-color: #f99d28; }
+
+.primary-accent-bg {
+  background-color: #f99d28; }
+
+secondary-bg {
+  background-color: #5cc3d6; }
+
+tertiary-bg {
+  background-color: #0290c9; }
+
+.alert-color {
+  color: #FF4D4D; }
+
+.alert-bg {
+  background-color: #FF4D4D; }
+
+.ms-btn {
+  background-color: #C4C4C4;
+  display: inline-block;
+  text-align: center;
+  color: white;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 10px 50px;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 5px;
+  font-weight: 600;
+  font-family: TTNormsBold;
+  margin: 1em;
+  width: 100%; }
+
+.ms-btn-primary {
+  background-color: #f99d28; }
+
+.ms-btn-secondary {
+  background-color: #5cc3d6; }
+
+.ms-btn-alert {
+  background-color: #FF4D4D; }
+
+.ms-btn-information {
+  background-color: #5C85D6; }
+
+.ms-btn-icon i {
+  margin-right: 1em; }
+
+.ms-banner-card {
+  background-size: cover;
+  width: 100%;
+  min-height: 14em;
+  border-radius: 5px;
+  color: white;
+  margin: 1em; }
+
+/*# sourceMappingURL=style.css.map */
