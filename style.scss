@@ -126,16 +126,30 @@ tertiary-bg {
     border-radius: 5px;
     color: white;
     margin: 1em;
-}
+    position: relative;
 
-.ms-banner-card span:nth-child(1) {
+    span:nth-child(1) {
+        font-size: 0.8em;
+        color: white;
+        text-transform: uppercase;
+        position: absolute;
+        margin: 1em 0 0 1.3em;
+    }
 
-}
+    span:nth-child(2) {
+        color: white;
+        font-size: 1em;
+        font-family: TTNormsBold;
+        position: absolute;
+        margin: 2em 0 0 1em;
+    }
 
-.ms-banner-card span:nth-child(2) {
-
-}
-
-.ms-banner-card p {
-    
+    p {
+        color: white;
+        position: absolute;
+        left: 1em;
+        font-size: 0.8em;
+        text-align: left;
+        bottom: 1em;
+    }
 }
