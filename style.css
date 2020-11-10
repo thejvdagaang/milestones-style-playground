@@ -226,6 +226,46 @@ tertiary-bg {
     left: 1em;
     box-shadow: 0 0 5px #f99d28; }
 
+.ms-checklist {
+  list-style: none;
+  padding-left: 0;
+  margin: 1em; }
+  .ms-checklist li {
+    border-radius: 5px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.12);
+    height: 3em;
+    margin-bottom: 1em;
+    position: relative;
+    background-color: white;
+    padding: 1em;
+    position: relative; }
+    .ms-checklist li div span span {
+      font-family: TTNormsRegular;
+      font-size: 1.4em;
+      display: inline-block;
+      margin-left: 2em; }
+    .ms-checklist li div span i {
+      color: #f99d28;
+      font-size: 2em;
+      width: 1em;
+      text-align: center;
+      position: absolute; }
+    .ms-checklist li div p {
+      color: #686868;
+      font-size: 0.6em;
+      margin-left: 4.8em;
+      text-transform: uppercase; }
+    .ms-checklist li div span.status {
+      right: 1em;
+      text-align: center;
+      position: absolute;
+      top: 0%;
+      bottom: 0;
+      text-transform: uppercase;
+      padding-top: 2.5em;
+      font-family: TTNormsBold;
+      font-size: 0.8em; }
+
 .ms-bottom-bar {
   width: 100%;
   height: 65px;
