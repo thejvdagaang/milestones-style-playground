@@ -190,9 +190,9 @@ tertiary-bg {
         color: #686868;
         text-transform: uppercase;
         font-family: TTNormsBold;
-        line-height: 1; }
+        line-height: 1.2; }
       .ms-milestones-list li div div.date span:nth-child(1) {
-        font-size: 0.8em;
+        font-size: 0.6em;
         color: #C4C4C4; }
       .ms-milestones-list li div div.date span:nth-child(2) {
         font-size: 1.2em; }
