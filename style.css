@@ -208,8 +208,6 @@ tertiary-bg {
     display: inline-block;
     width: 10px;
     height: 10px;
-    -moz-border-radius: 7.5px;
-    -webkit-border-radius: 7.5px;
     border-radius: 7.5px;
     background-color: #5cc3d6;
     position: absolute;
@@ -221,8 +219,6 @@ tertiary-bg {
     display: inline-block;
     width: 10px;
     height: 10px;
-    -moz-border-radius: 7.5px;
-    -webkit-border-radius: 7.5px;
     border-radius: 7.5px;
     background-color: #f99d28;
     position: absolute;
@@ -250,8 +246,6 @@ tertiary-bg {
       display: inline-block;
       width: 10px;
       height: 10px;
-      -moz-border-radius: 7.5px;
-      -webkit-border-radius: 7.5px;
       border-radius: 7.5px;
       background-color: #f99d28;
       position: absolute;

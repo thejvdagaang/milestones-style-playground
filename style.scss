@@ -165,6 +165,9 @@ tertiary-bg {
         text-align: left;
         bottom: 1em;
     }
+
+    //use with ionic slide
+    // change target elements to match
 }
 
 .ms-store-card {
@@ -176,7 +179,9 @@ tertiary-bg {
     background-position: center;
     margin: 1em;
     box-shadow: $shadow1;
+
     // use with ionic card for square
+    // change target elements to match
 }
 
 .ms-section-title {
@@ -295,8 +300,6 @@ tertiary-bg {
         display: inline-block;
         width: 10px;
         height: 10px;
-        -moz-border-radius: 7.5px;
-        -webkit-border-radius: 7.5px;
         border-radius: 7.5px;
         background-color: $secondary;
         position: absolute;
@@ -310,8 +313,6 @@ tertiary-bg {
         display: inline-block;
         width: 10px;
         height: 10px;
-        -moz-border-radius: 7.5px;
-        -webkit-border-radius: 7.5px;
         border-radius: 7.5px;
         background-color: $primary;
         position: absolute;
@@ -343,8 +344,6 @@ tertiary-bg {
             display: inline-block;
             width: 10px;
             height: 10px;
-            -moz-border-radius: 7.5px;
-            -webkit-border-radius: 7.5px;
             border-radius: 7.5px;
             background-color: $primary;
             position: absolute;
