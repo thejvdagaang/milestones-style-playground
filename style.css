@@ -5,24 +5,29 @@
   font-family: 'TTNormsRegular';
   src: url("assets/fonts/TT Norms Pro Regular.otf"); }
 @font-face {
-  font-family: "FabricIcons";
-  src: url("assets/fonts/fabric-icons-992ac698.ttf"); }
+  font-family: 'TTNormsMedium';
+  src: url("assets/fonts/TT Norms Pro Medium.otf"); }
 @-ms-viewport {
   width: device-width; }
+html, body {
+  background-color: #FBFBFB; }
+
 html, body, p, span, div, label {
   color: #505050;
   line-height: 1.4;
   font-family: 'TTNormsRegular';
   margin: 0;
   padding: 0;
-  background-color: #fbfbfb;
   display: block; }
 
-.playground-wrapper {
-  padding-bottom: 80px; }
+h1, h2, h3, h4, h5, p {
+  background-color: transparent; }
 
 span, p, label {
   background-color: transparent; }
+
+.playground-wrapper {
+  padding-bottom: 80px; }
 
 .full-width {
   width: 100%; }
@@ -126,7 +131,7 @@ tertiary-bg {
   text-transform: uppercase;
   font-family: TTNormsBold;
   font-size: 1em;
-  margin: 2em 1em 1em; }
+  margin: 2em 1em 0; }
 
 .ms-items-list {
   list-style: none;
@@ -135,7 +140,6 @@ tertiary-bg {
   .ms-items-list li {
     border-radius: 5px;
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.12);
-    width: 100%;
     height: 7em;
     margin-bottom: 1em;
     position: relative;
@@ -151,12 +155,80 @@ tertiary-bg {
     padding-left: 7em;
     padding-top: 0.7em; }
   .ms-items-list li div div h5 {
-    font-size: 1.05em;
+    font-size: 0.9em;
     margin-bottom: 0.5em;
     margin-top: 0;
-    font-family: TTNormsBold; }
+    font-family: TTNormsMedium; }
   .ms-items-list li div div p {
-    font-size: 0.8em; }
+    font-size: 0.8em;
+    color: #686868; }
+
+.ms-milestones-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 1em; }
+  .ms-milestones-list li {
+    border-radius: 5px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.12);
+    height: 3em;
+    margin-bottom: 1em;
+    position: relative;
+    background-color: white;
+    padding: 1em 1em 1em 3em;
+    position: relative; }
+    .ms-milestones-list li div div h5 {
+      padding-right: 5em;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    .ms-milestones-list li div div.date {
+      position: absolute;
+      right: 1em;
+      text-align: center;
+      top: 1.6em; }
+      .ms-milestones-list li div div.date span {
+        color: #686868;
+        text-transform: uppercase;
+        font-family: TTNormsBold;
+        line-height: 1; }
+      .ms-milestones-list li div div.date span:nth-child(1) {
+        font-size: 0.8em;
+        color: #C4C4C4; }
+      .ms-milestones-list li div div.date span:nth-child(2) {
+        font-size: 1.2em; }
+    .ms-milestones-list li div div h5 {
+      font-size: 0.9em;
+      margin-bottom: 0.5em;
+      margin-top: 0;
+      font-family: TTNormsMedium; }
+    .ms-milestones-list li div div p {
+      font-size: 0.8em; }
+  .ms-milestones-list li.coordinated::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    -moz-border-radius: 7.5px;
+    -webkit-border-radius: 7.5px;
+    border-radius: 7.5px;
+    background-color: #5cc3d6;
+    position: absolute;
+    top: 2em;
+    left: 1em;
+    box-shadow: 0 0 5px #5cc3d6; }
+  .ms-milestones-list li.self-managed::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    -moz-border-radius: 7.5px;
+    -webkit-border-radius: 7.5px;
+    border-radius: 7.5px;
+    background-color: #f99d28;
+    position: absolute;
+    top: 2em;
+    left: 1em;
+    box-shadow: 0 0 5px #f99d28; }
 
 .ms-bottom-bar {
   width: 100%;
@@ -172,5 +244,18 @@ tertiary-bg {
     width: 25%;
     align-self: center;
     background-color: transparent; }
+
+.ms-catergory-columns {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 1em; }
+  .ms-catergory-columns div {
+    width: 50%;
+    margin: 0.5em 0; }
+  .ms-catergory-columns a span {
+    display: inline; }
+  .ms-catergory-columns a i {
+    color: #f99d28 !important;
+    margin-right: 1em; }
 
 /*# sourceMappingURL=style.css.map */
