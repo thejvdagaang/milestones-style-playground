@@ -42,6 +42,10 @@ html, body, p, span, div, label {
     display: block;
 }
 
+.playground-wrapper {
+    padding-bottom: 80px;
+}
+
 span, p, label {
     background-color: transparent;
 }
@@ -214,5 +218,23 @@ tertiary-bg {
 
     li div div p {
         font-size: 0.8em;
+    }
+}
+
+.ms-bottom-bar {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    box-shadow: $shadow1;
+
+    div {
+        text-align: center;
+        color: $primary;
+        width: 25%;
+        align-self: center;
+        background-color: transparent;
     }
 }
