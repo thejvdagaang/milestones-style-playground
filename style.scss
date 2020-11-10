@@ -375,6 +375,10 @@ tertiary-bg {
             font-size: 0.8em;
         }
     }
+
+    li.has-update {
+        border: 1px solid $primary;
+    }
 }
 
 .ms-bottom-bar {

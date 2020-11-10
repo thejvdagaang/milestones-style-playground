@@ -265,6 +265,8 @@ tertiary-bg {
       padding-top: 2.5em;
       font-family: TTNormsBold;
       font-size: 0.8em; }
+  .ms-checklist li.has-update {
+    border: 1px solid #f99d28; }
 
 .ms-bottom-bar {
   width: 100%;
