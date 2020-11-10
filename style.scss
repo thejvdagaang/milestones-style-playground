@@ -199,32 +199,32 @@ tertiary-bg {
         margin-bottom: 1em;
         position: relative;
         background-color: white;
-    }
 
-    li div div img {
-        height: 5.5em;
-        position: absolute;
-        left: 0.7em;
-        max-width: 5.5em !important;
-        border-radius: 5px;
-        top: 0.7em;
+        div div img {
+            height: 5.5em;
+            position: absolute;
+            left: 0.7em;
+            max-width: 5.5em !important;
+            border-radius: 5px;
+            top: 0.7em;
+        }
+
+        div div h5 {
+            font-size: 0.9em;
+            margin-bottom: 0.5em;
+            margin-top: 0;
+            font-family: TTNormsMedium;
+        }
+
+        div div p {
+            font-size: 0.8em;
+            color: $default-darker
+        }
     }
 
     li > div {
         padding-left: 7em;
         padding-top: 0.7em;
-    }
-
-    li div div h5 {
-        font-size: 0.9em;
-        margin-bottom: 0.5em;
-        margin-top: 0;
-        font-family: TTNormsMedium;
-    }
-
-    li div div p {
-        font-size: 0.8em;
-        color: $default-darker
     }
 }
 
@@ -336,6 +336,24 @@ tertiary-bg {
         width: 25%;
         align-self: center;
         background-color: transparent;
+        position: relative;
+
+        a.active:after {
+            content: '';
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            -moz-border-radius: 7.5px;
+            -webkit-border-radius: 7.5px;
+            border-radius: 7.5px;
+            background-color: $primary;
+            position: absolute;
+            bottom: -1.5em;
+            box-shadow: 0 0 5px #f99d28;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+        }
     }
 }
 

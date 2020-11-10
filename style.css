@@ -144,24 +144,24 @@ tertiary-bg {
     margin-bottom: 1em;
     position: relative;
     background-color: white; }
-  .ms-items-list li div div img {
-    height: 5.5em;
-    position: absolute;
-    left: 0.7em;
-    max-width: 5.5em !important;
-    border-radius: 5px;
-    top: 0.7em; }
+    .ms-items-list li div div img {
+      height: 5.5em;
+      position: absolute;
+      left: 0.7em;
+      max-width: 5.5em !important;
+      border-radius: 5px;
+      top: 0.7em; }
+    .ms-items-list li div div h5 {
+      font-size: 0.9em;
+      margin-bottom: 0.5em;
+      margin-top: 0;
+      font-family: TTNormsMedium; }
+    .ms-items-list li div div p {
+      font-size: 0.8em;
+      color: #686868; }
   .ms-items-list li > div {
     padding-left: 7em;
     padding-top: 0.7em; }
-  .ms-items-list li div div h5 {
-    font-size: 0.9em;
-    margin-bottom: 0.5em;
-    margin-top: 0;
-    font-family: TTNormsMedium; }
-  .ms-items-list li div div p {
-    font-size: 0.8em;
-    color: #686868; }
 
 .ms-milestones-list {
   list-style: none;
@@ -243,7 +243,23 @@ tertiary-bg {
     color: #f99d28;
     width: 25%;
     align-self: center;
-    background-color: transparent; }
+    background-color: transparent;
+    position: relative; }
+    .ms-bottom-bar div a.active:after {
+      content: '';
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      -moz-border-radius: 7.5px;
+      -webkit-border-radius: 7.5px;
+      border-radius: 7.5px;
+      background-color: #f99d28;
+      position: absolute;
+      bottom: -1.5em;
+      box-shadow: 0 0 5px #f99d28;
+      margin: 0 auto;
+      left: 0;
+      right: 0; }
 
 .ms-catergory-columns {
   display: flex;
