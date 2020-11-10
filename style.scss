@@ -29,6 +29,7 @@ $body: #58595b;
 $info-edit: #5C85D6;
 $default: #C4C4C4;
 $default-darker: #686868;
+$shadow1: 0 0 16px rgba(0, 0, 0, 0.12);
 
 
 html, body, p, span, div, label {
@@ -127,6 +128,7 @@ tertiary-bg {
     color: white;
     margin: 1em;
     position: relative;
+    box-shadow: 0 4px 16px rgba(0,0,0,.12);
 
     span:nth-child(1) {
         font-size: 0.8em;
@@ -151,5 +153,66 @@ tertiary-bg {
         font-size: 0.8em;
         text-align: left;
         bottom: 1em;
+    }
+}
+
+.ms-store-card {
+    background-size: cover;
+    width: 50%;
+    min-height: 10em;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 1em;
+    box-shadow: $shadow1;
+    // use with ionic card for square
+}
+
+.ms-section-title {
+    text-transform: uppercase;
+    font-family: TTNormsBold;
+    font-size: 1em;
+    margin: 2em 1em 1em
+
+}
+
+.ms-items-list {
+    list-style: none;
+    padding: 0;
+    margin: 1em;
+
+    li {
+        border-radius: 5px;
+        box-shadow: $shadow1;
+        width: 100%;
+        height: 7em;
+        margin-bottom: 1em;
+        position: relative;
+        background-color: white;
+    }
+
+    li div div img {
+        height: 5.5em;
+        position: absolute;
+        left: 0.7em;
+        max-width: 5.5em !important;
+        border-radius: 5px;
+        top: 0.7em;
+    }
+
+    li > div {
+        padding-left: 7em;
+        padding-top: 0.7em;
+    }
+
+    li div div h5 {
+        font-size: 1.05em;
+        margin-bottom: 0.5em;
+        margin-top: 0;
+        font-family: TTNormsBold;
+    }
+
+    li div div p {
+        font-size: 0.8em;
     }
 }
