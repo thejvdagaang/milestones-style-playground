@@ -85,8 +85,8 @@ tertiary-bg {
     background-color: $tertiary;
 }
 
-.alert-color {
-    color: $alert;
+.alert {
+    color: $alert !important;
 }
 
 .alert-bg {
@@ -435,7 +435,7 @@ tertiary-bg {
     }
 }
 
-.ms-2column-menu {
+.ms-2column-menu, .ms-1column-menu {
     padding: 7em 4em 4em;
     display: flex;
     flex-flow: row wrap;
@@ -484,5 +484,15 @@ tertiary-bg {
             margin-top: 0.7em;
             font-size: 1.2em;
         }
+    }
+}
+
+.ms-1column-menu {
+    padding: 7em 4em 4em;
+    display: flex;
+    flex-flow: row wrap;
+
+    div {
+        width: 100% !important;
     }
 }
