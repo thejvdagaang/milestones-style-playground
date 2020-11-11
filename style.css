@@ -27,6 +27,7 @@ span, p, label {
   background-color: transparent; }
 
 .playground-wrapper {
+  padding-top: 80px;
   padding-bottom: 80px; }
 
 .full-width {
@@ -332,28 +333,47 @@ tertiary-bg {
     .ms-2column-menu div label, .ms-1column-menu div label {
       font-size: 0.8em;
       font-family: TTNormsMedium; }
-  .ms-2column-menu a.close, .ms-1column-menu a.close {
-    background-color: #686868;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    bottom: 4em;
-    left: 0;
-    right: 0;
-    text-align: center;
-    margin: 0 auto;
-    opacity: 0.8; }
-    .ms-2column-menu a.close i, .ms-1column-menu a.close i {
-      color: white;
-      margin-top: 0.7em;
-      font-size: 1.2em; }
 
-.ms-1column-menu {
-  padding: 7em 4em 4em;
+.ms-1column-menu div {
+  width: 100% !important; }
+
+a.screen-close {
+  background-color: #686868;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 4em;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: 0 auto;
+  opacity: 0.8; }
+  a.screen-close i {
+    color: white;
+    margin-top: 0.7em;
+    font-size: 1.2em; }
+
+.ms-topbar {
   display: flex;
-  flex-flow: row wrap; }
-  .ms-1column-menu div {
-    width: 100% !important; }
+  flex-flow: row wrap;
+  height: 85px;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  width: 100%;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.12); }
+  .ms-topbar div {
+    width: 50%; }
+  .ms-topbar div:nth-child(1) img {
+    width: 130px;
+    margin: 1.3em 0 0 1em; }
+  .ms-topbar div:nth-child(2) {
+    text-align: right;
+    color: #f99d28;
+    align-self: center; }
+    .ms-topbar div:nth-child(2) a {
+      font-size: 1.5em;
+      margin-right: 1em; }
 
 /*# sourceMappingURL=style.css.map */
