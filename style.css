@@ -310,4 +310,43 @@ tertiary-bg {
     color: #f99d28 !important;
     margin-right: 1em; }
 
+.ms-2column-menu {
+  padding: 7em 4em 4em;
+  display: flex;
+  flex-flow: row wrap; }
+  .ms-2column-menu h5.title {
+    text-transform: uppercase;
+    font-family: TTNormsBold;
+    font-size: 1.2em;
+    width: 100%;
+    text-align: center;
+    margin: 0 0 2em; }
+  .ms-2column-menu div {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 2em; }
+    .ms-2column-menu div h5 {
+      font-size: 2.5em;
+      color: #f99d28;
+      margin: 0.5em; }
+    .ms-2column-menu div label {
+      font-size: 0.8em;
+      font-family: TTNormsMedium; }
+  .ms-2column-menu a.close {
+    background-color: #686868;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 4em;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0 auto;
+    opacity: 0.8; }
+    .ms-2column-menu a.close i {
+      color: white;
+      margin-top: 0.7em;
+      font-size: 1.2em; }
+
 /*# sourceMappingURL=style.css.map */
