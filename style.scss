@@ -342,9 +342,9 @@ tertiary-bg {
             span {
                 span {
                     font-family: TTNormsRegular;
-                    font-size: 1.4em;
+                    font-size: 1.2em;
                     display: inline-block;
-                    margin-left: 2em;
+                    margin-left: 2.4em;
                 }
 
                 i {
@@ -408,7 +408,7 @@ tertiary-bg {
             background-color: $primary;
             position: absolute;
             bottom: -1.5em;
-            box-shadow: 0 0 5px #f99d28;
+            box-shadow: 0 0 5px $primary;
             margin: 0 auto;
             left: 0;
             right: 0;
@@ -523,6 +523,102 @@ a.screen-close {
         a {
             font-size: 1.5em;
             margin-right: 1em;
+        }
+    }
+}
+
+.ms-details {
+    margin: 2em 1em 0 1em;
+
+    div.top-bar {
+        display: flex;
+        flex-flow: row wrap;
+
+        div {
+            width: 50%;
+        }
+
+        div:nth-child(1) {
+            a {
+                color: $primary;
+                font-size: 1.3em;
+            }
+        }
+
+        div:nth-child(2) {
+            text-align: right;
+
+            span.type {
+                text-transform: uppercase;
+                font-size: 0.6em;
+                display: inline-block;
+                margin-right: 6em;
+            }
+
+            span.type.self-managed:before {
+                content: '';
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                border-radius: 7.5px;
+                background-color: $primary;
+                box-shadow: 0 0 5px $primary;
+                margin-right: 10px;
+            }
+
+            span.type.coordinated:before {
+                content: '';
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                border-radius: 7.5px;
+                background-color: $secondary;
+                box-shadow: 0 0 5px $secondary;
+                margin-right: 10px;
+            }
+
+            span.type.self-managed:after {
+                content: "self-managed";
+            }
+
+            span.type.coordinated:after {
+                content: "coordinated";
+            }
+
+            a {
+                color: $primary;
+                font-size: 1.3em;
+                position: absolute;
+                right: 1em;
+            }
+        }
+    }
+
+    h3 {
+        margin: 1em 0 1.5em 0;
+        font-family: TTNormsRegular;
+        text-align: center;
+    }
+
+
+    div.details {
+        display: flex;
+        flex-flow: row wrap;
+        text-transform: uppercase;
+        text-align: center;
+        padding-bottom: 1em;
+        border-bottom: 1px solid $default;
+
+        span {
+            width: 25%;
+            font-size: 0.6em;
+            font-family: TTNormsMedium;
+            
+            i {
+                color: $primary;
+                font-size: 1.6em;
+                margin-bottom: 10px;
+            }
         }
     }
 }

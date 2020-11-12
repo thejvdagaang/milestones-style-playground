@@ -242,9 +242,9 @@ tertiary-bg {
     position: relative; }
     .ms-checklist li div span span {
       font-family: TTNormsRegular;
-      font-size: 1.4em;
+      font-size: 1.2em;
       display: inline-block;
-      margin-left: 2em; }
+      margin-left: 2.4em; }
     .ms-checklist li div span i {
       color: #f99d28;
       font-size: 2em;
@@ -375,5 +375,69 @@ a.screen-close {
     .ms-topbar div:nth-child(2) a {
       font-size: 1.5em;
       margin-right: 1em; }
+
+.ms-details {
+  margin: 2em 1em 0 1em; }
+  .ms-details div.top-bar {
+    display: flex;
+    flex-flow: row wrap; }
+    .ms-details div.top-bar div {
+      width: 50%; }
+    .ms-details div.top-bar div:nth-child(1) a {
+      color: #f99d28;
+      font-size: 1.3em; }
+    .ms-details div.top-bar div:nth-child(2) {
+      text-align: right; }
+      .ms-details div.top-bar div:nth-child(2) span.type {
+        text-transform: uppercase;
+        font-size: 0.6em;
+        display: inline-block;
+        margin-right: 6em; }
+      .ms-details div.top-bar div:nth-child(2) span.type.self-managed:before {
+        content: '';
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 7.5px;
+        background-color: #f99d28;
+        box-shadow: 0 0 5px #f99d28;
+        margin-right: 10px; }
+      .ms-details div.top-bar div:nth-child(2) span.type.coordinated:before {
+        content: '';
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 7.5px;
+        background-color: #5cc3d6;
+        box-shadow: 0 0 5px #5cc3d6;
+        margin-right: 10px; }
+      .ms-details div.top-bar div:nth-child(2) span.type.self-managed:after {
+        content: "self-managed"; }
+      .ms-details div.top-bar div:nth-child(2) span.type.coordinated:after {
+        content: "coordinated"; }
+      .ms-details div.top-bar div:nth-child(2) a {
+        color: #f99d28;
+        font-size: 1.3em;
+        position: absolute;
+        right: 1em; }
+  .ms-details h3 {
+    margin: 1em 0 1.5em 0;
+    font-family: TTNormsRegular;
+    text-align: center; }
+  .ms-details div.details {
+    display: flex;
+    flex-flow: row wrap;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #C4C4C4; }
+    .ms-details div.details span {
+      width: 25%;
+      font-size: 0.6em;
+      font-family: TTNormsMedium; }
+      .ms-details div.details span i {
+        color: #f99d28;
+        font-size: 1.6em;
+        margin-bottom: 10px; }
 
 /*# sourceMappingURL=style.css.map */
