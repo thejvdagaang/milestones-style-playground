@@ -377,25 +377,25 @@ a.screen-close {
       font-size: 1.5em;
       margin-right: 1em; }
 
-.ms-details {
+.ms-details, .ms-milestones {
   margin: 2em 1em 0 1em; }
-  .ms-details div.top-bar {
+  .ms-details div.top-bar, .ms-milestones div.top-bar {
     display: flex;
     flex-flow: row wrap; }
-    .ms-details div.top-bar div {
+    .ms-details div.top-bar div, .ms-milestones div.top-bar div {
       width: 50%; }
-    .ms-details div.top-bar div:nth-child(1) a {
+    .ms-details div.top-bar div:nth-child(1) a, .ms-milestones div.top-bar div:nth-child(1) a {
       color: #f99d28;
       font-size: 1.3em; }
-    .ms-details div.top-bar div:nth-child(2) {
+    .ms-details div.top-bar div:nth-child(2), .ms-milestones div.top-bar div:nth-child(2) {
       text-align: right; }
-      .ms-details div.top-bar div:nth-child(2) span.type {
+      .ms-details div.top-bar div:nth-child(2) span.type, .ms-milestones div.top-bar div:nth-child(2) span.type {
         text-transform: uppercase;
         font-size: 0.6em;
         display: inline-block;
         margin-right: 6em;
         font-family: TTNormsBold; }
-      .ms-details div.top-bar div:nth-child(2) span.type.self-managed:before {
+      .ms-details div.top-bar div:nth-child(2) span.type.self-managed:before, .ms-milestones div.top-bar div:nth-child(2) span.type.self-managed:before {
         content: '';
         display: inline-block;
         width: 10px;
@@ -404,7 +404,7 @@ a.screen-close {
         background-color: #f99d28;
         box-shadow: 0 0 5px #f99d28;
         margin-right: 10px; }
-      .ms-details div.top-bar div:nth-child(2) span.type.coordinated:before {
+      .ms-details div.top-bar div:nth-child(2) span.type.coordinated:before, .ms-milestones div.top-bar div:nth-child(2) span.type.coordinated:before {
         content: '';
         display: inline-block;
         width: 10px;
@@ -413,31 +413,31 @@ a.screen-close {
         background-color: #5cc3d6;
         box-shadow: 0 0 5px #5cc3d6;
         margin-right: 10px; }
-      .ms-details div.top-bar div:nth-child(2) span.type.self-managed:after {
+      .ms-details div.top-bar div:nth-child(2) span.type.self-managed:after, .ms-milestones div.top-bar div:nth-child(2) span.type.self-managed:after {
         content: "self-managed"; }
-      .ms-details div.top-bar div:nth-child(2) span.type.coordinated:after {
+      .ms-details div.top-bar div:nth-child(2) span.type.coordinated:after, .ms-milestones div.top-bar div:nth-child(2) span.type.coordinated:after {
         content: "coordinated"; }
-      .ms-details div.top-bar div:nth-child(2) a {
+      .ms-details div.top-bar div:nth-child(2) a, .ms-milestones div.top-bar div:nth-child(2) a {
         color: #f99d28;
         font-size: 1.3em;
         position: absolute;
         right: 1em; }
-  .ms-details h3 {
+  .ms-details h3, .ms-milestones h3 {
     margin: 1em 0 1.5em 0;
     font-family: TTNormsRegular;
     text-align: center; }
-  .ms-details div.details {
+  .ms-details div.details, .ms-milestones div.details {
     display: flex;
     flex-flow: row wrap;
     text-transform: uppercase;
     text-align: center;
     padding-bottom: 1em;
     border-bottom: 1px solid #C4C4C4; }
-    .ms-details div.details span {
+    .ms-details div.details span, .ms-milestones div.details span {
       width: 25%;
       font-size: 0.6em;
       font-family: TTNormsMedium; }
-      .ms-details div.details span i {
+      .ms-details div.details span i, .ms-milestones div.details span i {
         color: #f99d28;
         font-size: 1.6em;
         margin-bottom: 10px; }
@@ -490,5 +490,19 @@ a.screen-close {
     margin-bottom: 2em; }
   .ms-product div.detail h3.ms-section-title {
     margin-left: 0; }
+
+.ms-milestones {
+  margin: 1.5em 1em 1em; }
+  .ms-milestones div.top-bar div {
+    position: relative; }
+    .ms-milestones div.top-bar div a:after {
+      content: "your milestones";
+      text-transform: uppercase;
+      font-size: 0.8em;
+      color: #181818;
+      font-family: TTNormsBold;
+      position: absolute;
+      width: 12em;
+      margin: 4px 0 0 20px; }
 
 /*# sourceMappingURL=style.css.map */

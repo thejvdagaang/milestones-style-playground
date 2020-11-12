@@ -528,7 +528,7 @@ a.screen-close {
     }
 }
 
-.ms-details {
+.ms-details, .ms-milestones {
     margin: 2em 1em 0 1em;
 
     div.top-bar {
@@ -615,7 +615,7 @@ a.screen-close {
             width: 25%;
             font-size: 0.6em;
             font-family: TTNormsMedium;
-            
+
             i {
                 color: $primary;
                 font-size: 1.6em;
@@ -700,6 +700,27 @@ a.screen-close {
 
         h3.ms-section-title{
             margin-left: 0;
+        }
+    }
+}
+
+.ms-milestones {
+    margin: 1.5em 1em 1em;
+
+    div.top-bar {
+        div {
+            position: relative;
+            
+            a:after {
+                content: "your milestones";
+                text-transform: uppercase;
+                font-size: 0.8em;
+                color: $primary-text;
+                font-family: TTNormsBold;
+                position: absolute;
+                width: 12em;
+                margin: 4px 0 0 20px;
+            }
         }
     }
 }
