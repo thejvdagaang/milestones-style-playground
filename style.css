@@ -396,7 +396,7 @@ a.screen-close {
         display: inline-block;
         margin-right: 6em;
         font-family: TTNormsBold; }
-      .ms-details div.top-bar div:nth-child(2) span.type.self-managed:before, .ms-milestones div.top-bar div:nth-child(2) span.type.self-managed:before, .ms-merchants div.top-bar div:nth-child(2) span.type.self-managed:before {
+      .ms-details div.top-bar div:nth-child(2) span.type:before, .ms-milestones div.top-bar div:nth-child(2) span.type:before, .ms-merchants div.top-bar div:nth-child(2) span.type:before {
         content: '';
         display: inline-block;
         width: 10px;
@@ -404,15 +404,6 @@ a.screen-close {
         border-radius: 7.5px;
         background-color: #f99d28;
         box-shadow: 0 0 5px #f99d28;
-        margin-right: 10px; }
-      .ms-details div.top-bar div:nth-child(2) span.type.coordinated:before, .ms-milestones div.top-bar div:nth-child(2) span.type.coordinated:before, .ms-merchants div.top-bar div:nth-child(2) span.type.coordinated:before {
-        content: '';
-        display: inline-block;
-        width: 10px;
-        height: 10px;
-        border-radius: 7.5px;
-        background-color: #5cc3d6;
-        box-shadow: 0 0 5px #5cc3d6;
         margin-right: 10px; }
       .ms-details div.top-bar div:nth-child(2) span.type.self-managed:after, .ms-milestones div.top-bar div:nth-child(2) span.type.self-managed:after, .ms-merchants div.top-bar div:nth-child(2) span.type.self-managed:after {
         content: "self-managed"; }

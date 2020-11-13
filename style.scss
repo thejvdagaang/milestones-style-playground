@@ -558,7 +558,7 @@ a.screen-close {
                 font-family: TTNormsBold;
             }
 
-            span.type.self-managed:before {
+            span.type:before {
                 content: '';
                 display: inline-block;
                 width: 10px;
@@ -566,17 +566,6 @@ a.screen-close {
                 border-radius: 7.5px;
                 background-color: $primary;
                 box-shadow: 0 0 5px $primary;
-                margin-right: 10px;
-            }
-
-            span.type.coordinated:before {
-                content: '';
-                display: inline-block;
-                width: 10px;
-                height: 10px;
-                border-radius: 7.5px;
-                background-color: $secondary;
-                box-shadow: 0 0 5px $secondary;
                 margin-right: 10px;
             }
 
