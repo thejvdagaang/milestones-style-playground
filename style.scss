@@ -43,6 +43,7 @@ html, body, p, span, div, label {
     margin: 0;
     padding: 0;
     display: block;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, p {
@@ -437,7 +438,7 @@ tertiary-bg {
     }
 }
 
-.ms-2column-menu, .ms-1column-menu {
+.ms-2column-menu, .ms-1column-menu, .ms-categories {
     padding: 7em 4em 4em;
     display: flex;
     flex-flow: row wrap;
@@ -480,7 +481,7 @@ a.screen-close {
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    position: absolute;
+    position: fixed;
     bottom: 4em;
     left: 0;
     right: 0;
@@ -528,7 +529,7 @@ a.screen-close {
     }
 }
 
-.ms-details, .ms-milestones {
+.ms-details, .ms-milestones, .ms-merchants {
     margin: 2em 1em 0 1em;
 
     div.top-bar {
@@ -705,7 +706,12 @@ a.screen-close {
 }
 
 .ms-milestones {
-    margin: 1.5em 1em 1em;
+    padding: 1.5em 1em 1em;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    background-color: $bodyBackground;
+    z-index: 1000;
 
     div.top-bar {
         div {
@@ -720,6 +726,175 @@ a.screen-close {
                 position: absolute;
                 width: 12em;
                 margin: 4px 0 0 20px;
+            }
+        }
+    }
+}
+
+.ms-milestones + ul.ms-milestones-list {
+    margin-top: 0;
+    padding-top: 80px;
+}
+
+.ms-categories {
+    padding: 4em 1em 3em;
+
+    h5.title {
+        margin-bottom: 0;
+        text-align: left;
+        margin-left: 2em;
+    }
+
+    ul {
+        list-style: none;
+
+        li {
+            position: relative;
+            font-size: 1.2em;
+            margin: 1em 0;
+
+            a {
+                i {
+                    color: $primary;
+                    position: absolute;
+                }
+
+                span {
+                    display: inline-block;
+                    margin-left: 2em;
+                }
+            }
+        }
+    }
+}
+
+.ms-merchants {
+    padding: 1.2em 1em 1em;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    background-color: $bodyBackground;
+    z-index: 1000;
+
+    div.top-bar {
+        div:first-child {
+            a {
+                span {
+                    position: absolute;
+                    display: inline-block;
+                    margin-left: 1.5em;
+                    text-transform: uppercase;
+                    font-family: TTNormsBold;
+                    font-size: 0.8em;
+                    margin-top: 4px;
+                }
+            }
+        }
+
+        div:last-child {
+            a {
+                right: 2.5em;
+            }
+        }
+    }
+}
+
+.ms-merchants + ul.ms-merchants-list {
+    margin-top: 0;
+    padding-top: 80px;
+}
+
+.ms-merchants-list {
+    list-style: none;
+    padding: 1em;
+
+    li {
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: $shadow1;
+        margin-bottom: 1em;
+
+        div {
+            div.banner {
+                height: 6em;
+
+                div.images {
+                    display: flex;
+                    flex-flow: row wrap;
+
+                    div {
+                        height: 6em;
+                        background-position: center;
+                        background-size: cover;
+                        width: percentage(1/4);
+                    }
+
+                    div:first-child {
+                        border-top-left-radius: 5px;
+                    }
+
+                    div:last-child {
+                        border-top-right-radius: 5px;
+                    }
+                }
+            }
+
+            div.detail {
+                padding: 0.8em 1em 1em;
+                display: flex;
+                flex-flow: row wrap;
+
+                div:first-child {
+                    width: 70%;
+
+                    h5 {
+                        font-size: 1em;
+                        margin-bottom: 0.5em;
+                        margin-top: 0;
+                    }
+
+                    p {
+                        font-size: 0.6em;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+
+                div:last-child {
+                    width: 30%;
+                    display: flex;
+                    flex-flow: row wrap;
+
+                    span {
+                        position: relative;
+                        width: 50%;
+                        text-align: center;
+                        align-self: center;
+                        font-size: 1.5em;
+                        font-family: TTNormsBold;
+                        margin-top: 1em;
+                        color: $primary;
+                    }
+
+                    span.tag:after {
+                        font-size: 0.3em;
+                        font-family: TTNormsBold;
+                        color: $default;
+                        position: absolute;
+                        top: -2em;
+                        right: 0;
+                        left: 0;
+                        text-transform: uppercase;
+                    }
+
+                    span.rating:after {
+                        content: "rating";
+                    }
+
+                    span.reviews:after {
+                        content: "reviews";
+                    }
+                }
             }
         }
     }
