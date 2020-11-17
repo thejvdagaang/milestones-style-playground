@@ -894,15 +894,6 @@ hr.section-border {
     opacity: 0.5;
 }
 
-.ms-store-collection {
-    display: flex;
-    flex-flow: row wrap;
-
-    div.ms-store-card {
-        width: percentage(1/2);
-    }
-}
-
 .ms-content-story {
     div.content {
         margin: 1em;
