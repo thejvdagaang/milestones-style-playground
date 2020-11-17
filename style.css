@@ -94,7 +94,7 @@ tertiary-bg {
 
 .ms-banner-card {
   background-size: cover;
-  min-height: 14em;
+  min-height: 12em;
   border-radius: 5px;
   color: white;
   margin: 1em;
@@ -378,25 +378,25 @@ a.screen-close {
       font-size: 1.5em;
       margin-right: 1em; }
 
-.ms-details, .ms-milestones, .ms-merchants {
+.ms-details, .ms-milestones, .ms-merchants, .ms-merchant-details {
   margin: 2em 1em 0 1em; }
-  .ms-details div.top-bar, .ms-milestones div.top-bar, .ms-merchants div.top-bar {
+  .ms-details div.top-bar, .ms-milestones div.top-bar, .ms-merchants div.top-bar, .ms-merchant-details div.top-bar {
     display: flex;
     flex-flow: row wrap; }
-    .ms-details div.top-bar div, .ms-milestones div.top-bar div, .ms-merchants div.top-bar div {
+    .ms-details div.top-bar div, .ms-milestones div.top-bar div, .ms-merchants div.top-bar div, .ms-merchant-details div.top-bar div {
       width: 50%; }
-    .ms-details div.top-bar div:nth-child(1) a, .ms-milestones div.top-bar div:nth-child(1) a, .ms-merchants div.top-bar div:nth-child(1) a {
+    .ms-details div.top-bar div:nth-child(1) a, .ms-milestones div.top-bar div:nth-child(1) a, .ms-merchants div.top-bar div:nth-child(1) a, .ms-merchant-details div.top-bar div:nth-child(1) a {
       color: #f99d28;
       font-size: 1.3em; }
-    .ms-details div.top-bar div:nth-child(2), .ms-milestones div.top-bar div:nth-child(2), .ms-merchants div.top-bar div:nth-child(2) {
+    .ms-details div.top-bar div:nth-child(2), .ms-milestones div.top-bar div:nth-child(2), .ms-merchants div.top-bar div:nth-child(2), .ms-merchant-details div.top-bar div:nth-child(2) {
       text-align: right; }
-      .ms-details div.top-bar div:nth-child(2) span.type, .ms-milestones div.top-bar div:nth-child(2) span.type, .ms-merchants div.top-bar div:nth-child(2) span.type {
+      .ms-details div.top-bar div:nth-child(2) span.type, .ms-milestones div.top-bar div:nth-child(2) span.type, .ms-merchants div.top-bar div:nth-child(2) span.type, .ms-merchant-details div.top-bar div:nth-child(2) span.type {
         text-transform: uppercase;
         font-size: 0.6em;
         display: inline-block;
         margin-right: 6em;
         font-family: TTNormsBold; }
-      .ms-details div.top-bar div:nth-child(2) span.type:before, .ms-milestones div.top-bar div:nth-child(2) span.type:before, .ms-merchants div.top-bar div:nth-child(2) span.type:before {
+      .ms-details div.top-bar div:nth-child(2) span.type:before, .ms-milestones div.top-bar div:nth-child(2) span.type:before, .ms-merchants div.top-bar div:nth-child(2) span.type:before, .ms-merchant-details div.top-bar div:nth-child(2) span.type:before {
         content: '';
         display: inline-block;
         width: 10px;
@@ -405,31 +405,31 @@ a.screen-close {
         background-color: #f99d28;
         box-shadow: 0 0 5px #f99d28;
         margin-right: 10px; }
-      .ms-details div.top-bar div:nth-child(2) span.type.self-managed:after, .ms-milestones div.top-bar div:nth-child(2) span.type.self-managed:after, .ms-merchants div.top-bar div:nth-child(2) span.type.self-managed:after {
+      .ms-details div.top-bar div:nth-child(2) span.type.self-managed:after, .ms-milestones div.top-bar div:nth-child(2) span.type.self-managed:after, .ms-merchants div.top-bar div:nth-child(2) span.type.self-managed:after, .ms-merchant-details div.top-bar div:nth-child(2) span.type.self-managed:after {
         content: "self-managed"; }
-      .ms-details div.top-bar div:nth-child(2) span.type.coordinated:after, .ms-milestones div.top-bar div:nth-child(2) span.type.coordinated:after, .ms-merchants div.top-bar div:nth-child(2) span.type.coordinated:after {
+      .ms-details div.top-bar div:nth-child(2) span.type.coordinated:after, .ms-milestones div.top-bar div:nth-child(2) span.type.coordinated:after, .ms-merchants div.top-bar div:nth-child(2) span.type.coordinated:after, .ms-merchant-details div.top-bar div:nth-child(2) span.type.coordinated:after {
         content: "coordinated"; }
-      .ms-details div.top-bar div:nth-child(2) a, .ms-milestones div.top-bar div:nth-child(2) a, .ms-merchants div.top-bar div:nth-child(2) a {
+      .ms-details div.top-bar div:nth-child(2) a, .ms-milestones div.top-bar div:nth-child(2) a, .ms-merchants div.top-bar div:nth-child(2) a, .ms-merchant-details div.top-bar div:nth-child(2) a {
         color: #f99d28;
         font-size: 1.3em;
         position: absolute;
         right: 1em; }
-  .ms-details h3, .ms-milestones h3, .ms-merchants h3 {
+  .ms-details h3, .ms-milestones h3, .ms-merchants h3, .ms-merchant-details h3 {
     margin: 1em 0 1.5em 0;
     font-family: TTNormsRegular;
     text-align: center; }
-  .ms-details div.details, .ms-milestones div.details, .ms-merchants div.details {
+  .ms-details div.details, .ms-milestones div.details, .ms-merchants div.details, .ms-merchant-details div.details {
     display: flex;
     flex-flow: row wrap;
     text-transform: uppercase;
     text-align: center;
     padding-bottom: 1em;
     border-bottom: 1px solid #C4C4C4; }
-    .ms-details div.details span, .ms-milestones div.details span, .ms-merchants div.details span {
+    .ms-details div.details span, .ms-milestones div.details span, .ms-merchants div.details span, .ms-merchant-details div.details span {
       width: 25%;
       font-size: 0.6em;
       font-family: TTNormsMedium; }
-      .ms-details div.details span i, .ms-milestones div.details span i, .ms-merchants div.details span i {
+      .ms-details div.details span i, .ms-milestones div.details span i, .ms-merchants div.details span i, .ms-merchant-details div.details span i {
         color: #f99d28;
         font-size: 1.6em;
         margin-bottom: 10px; }
@@ -437,50 +437,50 @@ a.screen-close {
 .no-topbar {
   padding-top: 0; }
 
-.ms-product img {
+.ms-product img, .ms-content-story img {
   width: 100%;
   margin-bottom: 1em; }
-.ms-product div.top-bar {
+.ms-product div.top-bar, .ms-content-story div.top-bar {
   margin: 0 1em; }
-  .ms-product div.top-bar div {
+  .ms-product div.top-bar div, .ms-content-story div.top-bar div {
     width: 100%; }
-    .ms-product div.top-bar div a {
+    .ms-product div.top-bar div a, .ms-content-story div.top-bar div a {
       color: #f99d28; }
-.ms-product h3 {
+.ms-product h3, .ms-content-story h3 {
   margin-bottom: 2em; }
-.ms-product div.detail {
+.ms-product div.detail, .ms-product div.content, .ms-content-story div.detail, .ms-content-story div.content {
   margin: 0 1em;
   position: relative; }
-  .ms-product div.detail div {
+  .ms-product div.detail div, .ms-product div.content div, .ms-content-story div.detail div, .ms-content-story div.content div {
     display: flex;
     flex-flow: row wrap;
     margin-bottom: 2em; }
-    .ms-product div.detail div span {
+    .ms-product div.detail div span, .ms-product div.content div span, .ms-content-story div.detail div span, .ms-content-story div.content div span {
       width: 50%;
       font-family: TTNormsBold; }
-    .ms-product div.detail div span:nth-child(1) {
+    .ms-product div.detail div span:nth-child(1), .ms-product div.content div span:nth-child(1), .ms-content-story div.detail div span:nth-child(1), .ms-content-story div.content div span:nth-child(1) {
       color: #f99d28;
       text-transform: uppercase;
       text-align: left;
       font-size: 0.8em; }
-    .ms-product div.detail div span:nth-child(2) {
+    .ms-product div.detail div span:nth-child(2), .ms-product div.content div span:nth-child(2), .ms-content-story div.detail div span:nth-child(2), .ms-content-story div.content div span:nth-child(2) {
       text-align: right; }
-    .ms-product div.detail div span:nth-child(2):after {
+    .ms-product div.detail div span:nth-child(2):after, .ms-product div.content div span:nth-child(2):after, .ms-content-story div.detail div span:nth-child(2):after, .ms-content-story div.content div span:nth-child(2):after {
       position: absolute;
       right: 0;
       top: 5.2em;
       font-size: 0.6em;
       font-family: TTNormsBold;
       content: "PHP"; }
-  .ms-product div.detail p {
+  .ms-product div.detail p, .ms-product div.content p, .ms-content-story div.detail p, .ms-content-story div.content p {
     text-align: justify;
     font-size: 0.8em;
     overflow: hidden;
     word-wrap: normal;
     margin-bottom: 1.2em; }
-  .ms-product div.detail p:last-child {
+  .ms-product div.detail p:last-child, .ms-product div.content p:last-child, .ms-content-story div.detail p:last-child, .ms-content-story div.content p:last-child {
     margin-bottom: 2em; }
-  .ms-product div.detail h3.ms-section-title {
+  .ms-product div.detail h3.ms-section-title, .ms-product div.content h3.ms-section-title, .ms-content-story div.detail h3.ms-section-title, .ms-content-story div.content h3.ms-section-title {
     margin-left: 0; }
 
 .ms-milestones {
@@ -609,5 +609,150 @@ a.screen-close {
           content: "rating"; }
         .ms-merchants-list li div div.detail div:last-child span.reviews:after {
           content: "reviews"; }
+
+hr.section-border {
+  margin: 0 1em;
+  opacity: 0.5; }
+
+.ms-store-collection {
+  display: flex;
+  flex-flow: row wrap; }
+  .ms-store-collection div.ms-store-card {
+    width: 50%; }
+
+.ms-content-story div.content {
+  margin: 1em;
+  padding-bottom: 2em; }
+  .ms-content-story div.content span {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-family: TTNormsBold; }
+  .ms-content-story div.content h3 {
+    margin-top: 0;
+    margin-bottom: 1em; }
+  .ms-content-story div.content p {
+    font-size: 0.8em; }
+  .ms-content-story div.content ul.ms-items-list {
+    margin: 0; }
+    .ms-content-story div.content ul.ms-items-list li div {
+      margin-bottom: 0; }
+      .ms-content-story div.content ul.ms-items-list li div div:last-child h5 {
+        margin-bottom: 0; }
+      .ms-content-story div.content ul.ms-items-list li div div:last-child p {
+        margin-bottom: 0; }
+
+.ms-merchant-details {
+  margin-top: 1em; }
+  .ms-merchant-details div.detail h3 {
+    text-align: left;
+    margin-bottom: 1em; }
+  .ms-merchant-details div.detail p {
+    font-size: 0.8em;
+    text-align: justify; }
+  .ms-merchant-details div.detail div.tabs {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 1.5em 0 1em;
+    border-bottom: 1px solid #C4C4C4; }
+    .ms-merchant-details div.detail div.tabs span {
+      width: percent(1/3);
+      margin: 0 0.6em;
+      text-transform: uppercase;
+      font-size: 1em;
+      font-family: TTNormsBold;
+      opacity: 0.3; }
+    .ms-merchant-details div.detail div.tabs span.active {
+      opacity: 1;
+      color: #f99d28; }
+    .ms-merchant-details div.detail div.tabs span:first-child {
+      margin-left: 0; }
+  .ms-merchant-details div.detail div.tab-content ul.ms-items-list {
+    margin: 1em 0 0 0; }
+    .ms-merchant-details div.detail div.tab-content ul.ms-items-list li div {
+      margin-bottom: 0;
+      padding-right: 0.5em; }
+      .ms-merchant-details div.detail div.tab-content ul.ms-items-list li div div:last-child h5 {
+        margin-bottom: 0; }
+      .ms-merchant-details div.detail div.tab-content ul.ms-items-list li div div:last-child p {
+        margin-bottom: 0;
+        font-size: 0.7em; }
+  .ms-merchant-details div.detail div.tab-content ul.ms-reviews {
+    padding: 0; }
+    .ms-merchant-details div.detail div.tab-content ul.ms-reviews h3 {
+      font-size: 0.8em;
+      font-family: TTNormsBold;
+      margin-left: 5em;
+      margin-top: 0.5em;
+      margin-bottom: 0.3em; }
+    .ms-merchant-details div.detail div.tab-content ul.ms-reviews p {
+      font-size: 0.7em; }
+
+.ms-merchant-banner, .ms-gallery {
+  display: flex;
+  flex-flow: row wrap; }
+  .ms-merchant-banner div, .ms-gallery div {
+    height: 6em;
+    background-position: center;
+    background-size: cover;
+    width: 25%; }
+  .ms-merchant-banner div:first-child, .ms-gallery div:first-child {
+    border-top-left-radius: 5px; }
+  .ms-merchant-banner div:last-child, .ms-gallery div:last-child {
+    border-top-right-radius: 5px; }
+
+.ms-gallery {
+  margin-top: 1em; }
+  .ms-gallery div {
+    width: 33.3333333333%;
+    border-radius: 0 !important; }
+
+.ms-reviews {
+  list-style: none;
+  padding: 0 1em; }
+  .ms-reviews li {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.12);
+    padding: 1em;
+    margin-bottom: 1em; }
+    .ms-reviews li div {
+      position: relative; }
+      .ms-reviews li div div.image {
+        height: 3em;
+        width: 3em;
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+        position: absolute; }
+      .ms-reviews li div div h3 {
+        font-size: 0.8em;
+        font-family: TTNormsBold;
+        margin-left: 5em;
+        margin-top: 0.5em;
+        margin-bottom: 0.3em; }
+      .ms-reviews li div div span.date {
+        font-size: 0.6em;
+        color: #C4C4C4;
+        text-transform: uppercase;
+        opacity: 0.8; }
+        .ms-reviews li div div span.date span:first-child {
+          position: absolute;
+          font-family: TTNormsBold;
+          right: 0;
+          top: 0; }
+        .ms-reviews li div div span.date span:last-child {
+          position: absolute;
+          font-family: TTNormsBold;
+          right: 0;
+          top: 1em; }
+      .ms-reviews li div div span.rating {
+        margin-left: 4em; }
+        .ms-reviews li div div span.rating i {
+          color: #f99d28; }
+      .ms-reviews li div div div {
+        padding-left: 4em;
+        text-align: justify; }
+        .ms-reviews li div div div p {
+          font-size: 0.7em; }
 
 /*# sourceMappingURL=style.css.map */
