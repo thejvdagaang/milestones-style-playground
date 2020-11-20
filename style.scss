@@ -476,7 +476,7 @@ tertiary-bg {
     }
 }
 
-a.screen-close {
+a.screen-close, a.screen-confirm {
     background-color: $default-darker;
     border-radius: 50%;
     width: 50px;
@@ -494,6 +494,21 @@ a.screen-close {
         margin-top: 0.7em;
         font-size: 1.2em;
     }
+}
+
+a.screen-confirm {
+    background-color: $primary;
+
+}
+
+a.screen-close.left, a.screen-confirm.left {
+    right: unset;
+    left: 2em;
+}
+
+a.screen-close.right, a.screen-confirm.right {
+    right: 2em;
+    left: unset;
 }
 
 .ms-topbar {
@@ -540,7 +555,7 @@ a.screen-close {
             width: 50%;
         }
 
-        div:nth-child(1) {
+        div:first-child {
             a {
                 color: $primary;
                 font-size: 1.3em;
@@ -1114,3 +1129,44 @@ hr.section-border {
     }
 }
 
+.ms-add-product {
+    padding: 3em 1em 4em;
+
+    h3 {
+        text-transform: uppercase;
+        font-size: 1em;
+        font-family: TTNormsBold;
+        color: $primary;
+        text-align: center;
+    }
+
+    div.product {
+        ul.ms-items-list {
+            margin: 1em 0 4em 0;
+
+            li div {
+                margin-bottom: 0;
+                padding-right: 0.5em;
+
+                div:last-child {
+                    h5 {
+                        margin-bottom: 0;
+                    }
+
+                    p {
+                        margin-bottom: 0;
+                        font-size: 0.7em;
+                    }
+                }
+            }
+        }
+
+        ul.ms-milestones-list {
+            margin: 0 0 3em;
+
+            li.active {
+                border: 1px solid $primary;
+            }
+        }
+    }
+}

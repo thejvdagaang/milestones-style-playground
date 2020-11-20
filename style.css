@@ -339,7 +339,7 @@ tertiary-bg {
 .ms-1column-menu div {
   width: 100% !important; }
 
-a.screen-close {
+a.screen-close, a.screen-confirm {
   background-color: #686868;
   border-radius: 50%;
   width: 50px;
@@ -351,10 +351,21 @@ a.screen-close {
   text-align: center;
   margin: 0 auto;
   opacity: 0.8; }
-  a.screen-close i {
+  a.screen-close i, a.screen-confirm i {
     color: white;
     margin-top: 0.7em;
     font-size: 1.2em; }
+
+a.screen-confirm {
+  background-color: #f99d28; }
+
+a.screen-close.left, a.screen-confirm.left {
+  right: unset;
+  left: 2em; }
+
+a.screen-close.right, a.screen-confirm.right {
+  right: 2em;
+  left: unset; }
 
 .ms-topbar {
   display: flex;
@@ -385,7 +396,7 @@ a.screen-close {
     flex-flow: row wrap; }
     .ms-details div.top-bar div, .ms-milestones div.top-bar div, .ms-merchants div.top-bar div, .ms-merchant-details div.top-bar div {
       width: 50%; }
-    .ms-details div.top-bar div:nth-child(1) a, .ms-milestones div.top-bar div:nth-child(1) a, .ms-merchants div.top-bar div:nth-child(1) a, .ms-merchant-details div.top-bar div:nth-child(1) a {
+    .ms-details div.top-bar div:first-child a, .ms-milestones div.top-bar div:first-child a, .ms-merchants div.top-bar div:first-child a, .ms-merchant-details div.top-bar div:first-child a {
       color: #f99d28;
       font-size: 1.3em; }
     .ms-details div.top-bar div:nth-child(2), .ms-milestones div.top-bar div:nth-child(2), .ms-merchants div.top-bar div:nth-child(2), .ms-merchant-details div.top-bar div:nth-child(2) {
@@ -748,5 +759,28 @@ hr.section-border {
         text-align: justify; }
         .ms-reviews li div div div p {
           font-size: 0.7em; }
+
+.ms-add-product {
+  padding: 3em 1em 4em; }
+  .ms-add-product h3 {
+    text-transform: uppercase;
+    font-size: 1em;
+    font-family: TTNormsBold;
+    color: #f99d28;
+    text-align: center; }
+  .ms-add-product div.product ul.ms-items-list {
+    margin: 1em 0 4em 0; }
+    .ms-add-product div.product ul.ms-items-list li div {
+      margin-bottom: 0;
+      padding-right: 0.5em; }
+      .ms-add-product div.product ul.ms-items-list li div div:last-child h5 {
+        margin-bottom: 0; }
+      .ms-add-product div.product ul.ms-items-list li div div:last-child p {
+        margin-bottom: 0;
+        font-size: 0.7em; }
+  .ms-add-product div.product ul.ms-milestones-list {
+    margin: 0 0 3em; }
+    .ms-add-product div.product ul.ms-milestones-list li.active {
+      border: 1px solid #f99d28; }
 
 /*# sourceMappingURL=style.css.map */
