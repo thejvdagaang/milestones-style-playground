@@ -135,34 +135,42 @@ tertiary-bg {
   font-family: TTNormsBold;
   font-size: 1em;
   margin: 2em 1em 0; }
+  .ms-section-title i {
+    color: #f99d28;
+    margin-right: 1em; }
 
-.ms-items-list {
+.ms-section-title.small {
+  font-size: 0.8em;
+  margin-left: 0;
+  margin-bottom: 1em; }
+
+.ms-items-list, .ms-product-adds {
   list-style: none;
   padding: 0;
   margin: 1em; }
-  .ms-items-list li {
+  .ms-items-list li, .ms-product-adds li {
     border-radius: 5px;
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.12);
     height: 7em;
     margin-bottom: 1em;
     position: relative;
     background-color: white; }
-    .ms-items-list li div div img {
+    .ms-items-list li div div img, .ms-product-adds li div div img {
       height: 5.5em;
       position: absolute;
       left: 0.7em;
       max-width: 5.5em !important;
       border-radius: 5px;
       top: 0.7em; }
-    .ms-items-list li div div h5 {
+    .ms-items-list li div div h5, .ms-product-adds li div div h5 {
       font-size: 0.9em;
       margin-bottom: 0.5em;
       margin-top: 0;
       font-family: TTNormsMedium; }
-    .ms-items-list li div div p {
+    .ms-items-list li div div p, .ms-product-adds li div div p {
       font-size: 0.8em;
       color: #686868; }
-  .ms-items-list li > div {
+  .ms-items-list li > div, .ms-product-adds li > div {
     padding-left: 7em;
     padding-top: 0.7em; }
 
@@ -782,5 +790,159 @@ hr.section-border {
     margin: 0 0 3em; }
     .ms-add-product div.product ul.ms-milestones-list li.active {
       border: 1px solid #f99d28; }
+
+.ms-checklist-details {
+  padding: 1.2em 1em; }
+  .ms-checklist-details div.top-bar a {
+    color: #f99d28; }
+  .ms-checklist-details div.top-bar span {
+    position: absolute;
+    font-size: 0.8em;
+    font-family: TTNormsBold;
+    text-transform: uppercase;
+    margin-left: 1em;
+    margin-top: 3px; }
+  .ms-checklist-details span {
+    display: inline-block;
+    margin: 0.8em 0; }
+    .ms-checklist-details span i {
+      color: #f99d28; }
+    .ms-checklist-details span span {
+      font-family: TTNormsBold;
+      position: absolute;
+      margin: 3px 0 0 1em; }
+  .ms-checklist-details span.checklist {
+    width: 100%;
+    margin: 1.5em 0; }
+  .ms-checklist-details div.details div.main-item {
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.12);
+    padding: 1em;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    position: relative; }
+    .ms-checklist-details div.details div.main-item div div.img {
+      width: 3em;
+      height: 3em;
+      background-position: center;
+      background-size: cover;
+      border-radius: 5px; }
+    .ms-checklist-details div.details div.main-item div h3 {
+      position: absolute;
+      top: 0;
+      margin-left: 3em; }
+    .ms-checklist-details div.details div.main-item div div.price {
+      position: relative;
+      display: flex;
+      flex-flow: row wrap; }
+      .ms-checklist-details div.details div.main-item div div.price span:first-child {
+        color: #f99d28;
+        font-size: 0.7em;
+        font-family: TTNormsBold;
+        text-transform: uppercase;
+        position: absolute;
+        top: 1em; }
+      .ms-checklist-details div.details div.main-item div div.price span:last-child {
+        font-size: 1.2em;
+        right: 0;
+        width: 100%;
+        text-align: right;
+        font-family: TTNormsBold; }
+      .ms-checklist-details div.details div.main-item div div.price span:last-child:after {
+        content: "PHP";
+        right: 0;
+        position: absolute;
+        font-size: 0.6em;
+        font-family: TTNormsBold;
+        color: #C4C4C4;
+        top: 0; }
+    .ms-checklist-details div.details div.main-item div p {
+      font-size: 0.8em;
+      text-align: justify; }
+    .ms-checklist-details div.details div.main-item div span.expand {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 0; }
+      .ms-checklist-details div.details div.main-item div span.expand a {
+        color: #f99d28; }
+    .ms-checklist-details div.details div.main-item div.options {
+      display: flex;
+      flex-flow: row wrap; }
+      .ms-checklist-details div.details div.main-item div.options span {
+        width: 50%; }
+        .ms-checklist-details div.details div.main-item div.options span a {
+          margin: 0 15px; }
+      .ms-checklist-details div.details div.main-item div.options span:first-child {
+        text-align: left; }
+      .ms-checklist-details div.details div.main-item div.options span:last-child {
+        text-align: right; }
+
+.disabled {
+  opacity: 0.3; }
+
+.ms-product-adds {
+  margin: unset; }
+  .ms-product-adds li {
+    padding: 1em;
+    height: unset;
+    position: relative; }
+  .ms-product-adds li > div {
+    padding-left: unset;
+    padding-top: unset; }
+    .ms-product-adds li > div div {
+      padding-right: 5em; }
+      .ms-product-adds li > div div h5 {
+        font-size: 0.7em; }
+      .ms-product-adds li > div div p {
+        font-size: 0.6em;
+        overflow-x: hidden;
+        text-overflow: ellipsis; }
+      .ms-product-adds li > div div span {
+        height: 50%;
+        position: absolute;
+        right: 0;
+        top: 11px;
+        padding-top: 20px;
+        margin: 0 1em 0 0;
+        font-family: TTNormsBold; }
+      .ms-product-adds li > div div span:after {
+        content: "PHP";
+        right: 0;
+        position: absolute;
+        font-size: 0.6em;
+        font-family: TTNormsBold;
+        color: #C4C4C4;
+        top: 1em; }
+
+.no-gutter {
+  margin: 0; }
+
+ul.ms-payments {
+  list-style: none;
+  padding: 0; }
+  ul.ms-payments li {
+    border-bottom: 1px solid #C4C4C4; }
+    ul.ms-payments li div {
+      display: flex;
+      flex-flow: row wrap; }
+      ul.ms-payments li div span {
+        font-size: 0.8em;
+        font-family: TTNormsBold;
+        width: 50%;
+        color: #686868;
+        margin-bottom: 1.3em; }
+      ul.ms-payments li div span:first-child {
+        text-align: left; }
+        ul.ms-payments li div span:first-child span {
+          font-size: 0.6em;
+          text-transform: uppercase;
+          text-align: left;
+          margin-left: 0; }
+      ul.ms-payments li div span:last-child {
+        text-align: right; }
+  ul.ms-payments li.total, ul.ms-payments li.balance {
+    border-bottom: unset; }
+    ul.ms-payments li.total div span, ul.ms-payments li.balance div span {
+      color: #181818;
+      margin-bottom: 0; }
 
 /*# sourceMappingURL=style.css.map */

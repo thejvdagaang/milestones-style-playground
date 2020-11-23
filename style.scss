@@ -193,9 +193,19 @@ tertiary-bg {
     font-size: 1em;
     margin: 2em 1em 0;
 
+    i {
+        color: $primary;
+        margin-right: 1em;
+    }
 }
 
-.ms-items-list {
+.ms-section-title.small {
+    font-size: 0.8em;
+    margin-left: 0;
+    margin-bottom: 1em;
+}
+
+.ms-items-list, .ms-product-adds {
     list-style: none;
     padding: 0;
     margin: 1em;
@@ -1166,6 +1176,244 @@ hr.section-border {
 
             li.active {
                 border: 1px solid $primary;
+            }
+        }
+    }
+}
+
+.ms-checklist-details {
+    padding: 1.2em 1em;
+
+    div.top-bar {
+        a {
+            color: $primary;
+        }
+
+        span {
+            position: absolute;
+            font-size: 0.8em;
+            font-family: TTNormsBold;
+            text-transform: uppercase;
+            margin-left: 1em;
+            margin-top: 3px;
+        }
+    }
+
+    span {
+        display: inline-block;
+        margin: 0.8em 0;
+
+        i {
+            color: $primary;
+        }
+
+        span {
+            font-family: TTNormsBold;
+            position: absolute;
+            margin: 3px 0 0 1em;
+        }
+    }
+
+    span.checklist{
+        width: 100%;
+        margin: 1.5em 0;
+    }
+
+    div.details {
+        div.main-item {
+            box-shadow: $shadow1;
+            padding: 1em;
+            border: 1px solid $default;
+            border-radius: 5px;
+            position: relative;
+
+            div {
+                div.img {
+                    width: 3em;
+                    height: 3em;
+                    background-position: center;
+                    background-size: cover;
+                    border-radius: 5px;
+                }
+
+                h3 {
+                    position: absolute;
+                    top: 0;
+                    margin-left: 3em;
+                }
+
+                div.price {
+                    position: relative;
+                    display: flex;
+                    flex-flow: row wrap;
+
+                    span:first-child {
+                        color: $primary;
+                        font-size: 0.7em;
+                        font-family: TTNormsBold;
+                        text-transform: uppercase;
+                        position: absolute;
+                        top: 1em;
+                    }
+
+                    span:last-child {
+                        font-size: 1.2em;
+                        right: 0;
+                        width: 100%;
+                        text-align: right;
+                        font-family: TTNormsBold;
+                    }
+
+                    span:last-child:after {
+                        content: "PHP";
+                        right: 0;
+                        position: absolute;
+                        font-size: 0.6em;
+                        font-family: TTNormsBold;
+                        color: $default;
+                        top: 0;
+                    }
+                }
+
+                p {
+                    font-size: 0.8em;
+                    text-align: justify;
+                }
+
+                span.expand {
+                    width: 100%;
+                    text-align: center;
+                    margin-bottom: 0;
+                    a {
+                        color: $primary;
+                    }
+                }
+            }
+
+            div.options {
+                display: flex;
+                flex-flow: row wrap;
+
+                span {
+                    width: 50%;
+
+                    a {
+                        margin: 0 15px;
+                    }
+                }
+
+                span:first-child {
+                    text-align: left;
+                }
+
+                span:last-child {
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
+
+.disabled {
+    opacity: 0.3;
+}
+
+.ms-product-adds {
+    margin: unset;
+    
+    li {
+        padding: 1em;
+        height: unset;
+        position: relative;
+    }
+
+    li > div {
+        padding-left: unset;
+        padding-top: unset;
+
+        div {
+            padding-right: 5em;
+
+            h5 {
+                font-size: 0.7em;
+            }
+
+            p {
+                font-size: 0.6em;
+                overflow-x: hidden;
+                text-overflow: ellipsis;
+            }
+
+            span {
+                height: 50%;
+                position: absolute;
+                right: 0;
+                top: 11px;
+                padding-top: 20px;
+                margin: 0 1em 0 0;
+                font-family: TTNormsBold;
+            }
+
+            span:after {
+                content: "PHP";
+                right: 0;
+                position: absolute;
+                font-size: 0.6em;
+                font-family: TTNormsBold;
+                color: #C4C4C4;
+                top: 1em;
+            }
+        }
+    }
+}
+
+.no-gutter {
+    margin: 0;
+}
+
+ul.ms-payments {
+    list-style: none;
+    padding: 0;
+
+    li {
+        border-bottom: 1px solid $default;
+
+        div {
+            display: flex;
+            flex-flow: row wrap;
+
+            span {
+                font-size: 0.8em;
+                font-family: TTNormsBold;
+                width: percentage(1/2);
+                color: $default-darker;
+                margin-bottom: 1.3em;
+            }
+
+            span:first-child {
+                text-align: left;
+
+                span {
+                    font-size: 0.6em;
+                    text-transform: uppercase;
+                    text-align: left;
+                    margin-left: 0;
+                }
+            }
+
+            span:last-child {
+                text-align: right;
+            }
+        }
+    }
+
+    li.total, li.balance {
+        border-bottom: unset;
+
+        div {
+            span {
+                color: $primary-text;
+                margin-bottom: 0;
             }
         }
     }
