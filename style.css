@@ -435,6 +435,32 @@ a.screen-close.right, a.screen-confirm.right {
         font-size: 1.3em;
         position: absolute;
         right: 1em; }
+    .ms-details div.top-bar div.rating, .ms-milestones div.top-bar div.rating, .ms-merchants div.top-bar div.rating, .ms-merchant-details div.top-bar div.rating, .ms-notifications div.top-bar div.rating {
+      width: 50%;
+      display: flex;
+      flex-flow: row wrap; }
+      .ms-details div.top-bar div.rating span, .ms-milestones div.top-bar div.rating span, .ms-merchants div.top-bar div.rating span, .ms-merchant-details div.top-bar div.rating span, .ms-notifications div.top-bar div.rating span {
+        position: relative;
+        width: 50%;
+        text-align: center;
+        align-self: center;
+        font-size: 1.5em;
+        font-family: TTNormsBold;
+        padding-top: 1em;
+        color: #f99d28; }
+      .ms-details div.top-bar div.rating span.tag:after, .ms-milestones div.top-bar div.rating span.tag:after, .ms-merchants div.top-bar div.rating span.tag:after, .ms-merchant-details div.top-bar div.rating span.tag:after, .ms-notifications div.top-bar div.rating span.tag:after {
+        font-size: 0.4em;
+        font-family: TTNormsBold;
+        color: #C4C4C4;
+        position: absolute;
+        top: 1.5em;
+        right: 0;
+        left: 0;
+        text-transform: uppercase; }
+      .ms-details div.top-bar div.rating span.rating:after, .ms-milestones div.top-bar div.rating span.rating:after, .ms-merchants div.top-bar div.rating span.rating:after, .ms-merchant-details div.top-bar div.rating span.rating:after, .ms-notifications div.top-bar div.rating span.rating:after {
+        content: "rating"; }
+      .ms-details div.top-bar div.rating span.reviews:after, .ms-milestones div.top-bar div.rating span.reviews:after, .ms-merchants div.top-bar div.rating span.reviews:after, .ms-merchant-details div.top-bar div.rating span.reviews:after, .ms-notifications div.top-bar div.rating span.reviews:after {
+        content: "reviews"; }
   .ms-details h3, .ms-milestones h3, .ms-merchants h3, .ms-merchant-details h3, .ms-notifications h3 {
     margin: 1em 0 1.5em 0;
     font-family: TTNormsRegular;
@@ -658,7 +684,9 @@ hr.section-border {
         margin-bottom: 0; }
 
 .ms-merchant-details {
-  margin-top: 1em; }
+  margin-top: 0; }
+  .ms-merchant-details div.top-bar div:first-child {
+    padding-top: 1.5em; }
   .ms-merchant-details div.detail h3 {
     text-align: left;
     margin-bottom: 1em; }

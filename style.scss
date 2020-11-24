@@ -611,6 +611,42 @@ a.screen-close.right, a.screen-confirm.right {
                 right: 1em;
             }
         }
+
+        div.rating {
+            width: 50%;
+            display: flex;
+            flex-flow: row wrap;
+
+            span {
+                position: relative;
+                width: 50%;
+                text-align: center;
+                align-self: center;
+                font-size: 1.5em;
+                font-family: TTNormsBold;
+                padding-top: 1em;
+                color: $primary;
+            }
+
+            span.tag:after {
+                font-size: 0.4em;
+                font-family: TTNormsBold;
+                color: $default;
+                position: absolute;
+                top: 1.5em;
+                right: 0;
+                left: 0;
+                text-transform: uppercase;
+            }
+
+            span.rating:after {
+                content: "rating";
+            }
+
+            span.reviews:after {
+                content: "reviews";
+            }
+        }
     }
 
     h3 {
@@ -963,7 +999,13 @@ hr.section-border {
 }
 
 .ms-merchant-details {
-    margin-top: 1em;
+    margin-top: 0;
+
+    div.top-bar {
+        div:first-child {
+            padding-top: 1.5em;
+        }
+    }
 
     div.detail {
         h3 {
