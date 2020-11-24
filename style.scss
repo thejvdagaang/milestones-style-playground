@@ -554,7 +554,7 @@ a.screen-close.right, a.screen-confirm.right {
     }
 }
 
-.ms-details, .ms-milestones, .ms-merchants, .ms-merchant-details {
+.ms-details, .ms-milestones, .ms-merchants, .ms-merchant-details, .ms-notifications {
     margin: 2em 1em 0 1em;
 
     div.top-bar {
@@ -782,7 +782,7 @@ a.screen-close.right, a.screen-confirm.right {
     }
 }
 
-.ms-merchants {
+.ms-merchants, .ms-notifications {
     padding: 1.2em 1em 1em;
     margin: 0;
     position: fixed;
@@ -1320,6 +1320,7 @@ hr.section-border {
 
 .ms-product-adds {
     margin: unset;
+    margin-bottom: 2em;
     
     li {
         padding: 1em;
@@ -1374,9 +1375,11 @@ hr.section-border {
 ul.ms-payments {
     list-style: none;
     padding: 0;
+    margin-bottom: 2em;
 
     li {
         border-bottom: 1px solid $default;
+        padding: 0.5em;
 
         div {
             display: flex;
@@ -1385,6 +1388,7 @@ ul.ms-payments {
             span {
                 font-size: 0.8em;
                 font-family: TTNormsBold;
+                text-transform: uppercase;
                 width: percentage(1/2);
                 color: $default-darker;
                 margin-bottom: 1.3em;
@@ -1407,7 +1411,15 @@ ul.ms-payments {
         }
     }
 
-    li.total, li.balance {
+    li.total {
+        div {
+            span {
+                color: $primary-text;
+            }
+        }
+    }
+
+    li.balance {
         border-bottom: unset;
 
         div {
@@ -1417,4 +1429,60 @@ ul.ms-payments {
             }
         }
     }
+}
+
+ul.ms-notifications-list {
+    list-style: none;
+    padding-top: 80px;
+    padding-bottom: 3em;
+    padding-left: unset;
+    margin: 0 1em;
+    position: relative;
+
+    li {
+        background-color: white;
+        padding: 1em;
+        box-shadow: $shadow1;
+        margin-bottom: 1em;
+        border-radius: 5px;
+
+        div {
+            div {
+                p {
+                    font-size: 0.8em;
+                    margin-bottom: 0.5em;
+                }
+            }
+
+            span {
+                color: $default;
+                font-size: 0.6em;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    
+}
+
+ul.ms-notifications-list.read {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+ul.ms-notifications-list.new {
+    li {
+        border: 1px solid $primary;
+    }
+}
+
+ul.ms-notifications-list.new::after {
+    content: "you're all caught up.";
+    font-family: TTNormsBold;
+    font-size: 0.8em;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: $default;
+    margin-top: 0.5em;
 }
