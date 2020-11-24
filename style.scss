@@ -410,6 +410,7 @@ tertiary-bg {
         align-self: center;
         background-color: transparent;
         position: relative;
+        height: 40px;
 
         a.active:after {
             content: '';
@@ -419,7 +420,7 @@ tertiary-bg {
             border-radius: 7.5px;
             background-color: $primary;
             position: absolute;
-            bottom: -1.5em;
+            bottom: 5px;
             box-shadow: 0 0 5px $primary;
             margin: 0 auto;
             left: 0;
@@ -1475,7 +1476,7 @@ ul.ms-notifications-list.new {
         border: 1px solid $primary;
     }
 }
-
+ 
 ul.ms-notifications-list.new::after {
     content: "you're all caught up.";
     font-family: TTNormsBold;

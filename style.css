@@ -293,7 +293,8 @@ tertiary-bg {
     width: 25%;
     align-self: center;
     background-color: transparent;
-    position: relative; }
+    position: relative;
+    height: 40px; }
     .ms-bottom-bar div a.active:after {
       content: '';
       display: inline-block;
@@ -302,7 +303,7 @@ tertiary-bg {
       border-radius: 7.5px;
       background-color: #f99d28;
       position: absolute;
-      bottom: -1.5em;
+      bottom: 5px;
       box-shadow: 0 0 5px #f99d28;
       margin: 0 auto;
       left: 0;
