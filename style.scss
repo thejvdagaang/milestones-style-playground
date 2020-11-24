@@ -582,6 +582,7 @@ a.screen-close.right, a.screen-confirm.right {
                 display: inline-block;
                 margin-right: 6em;
                 font-family: TTNormsBold;
+                margin-top: 8px;
             }
 
             span.type:before {
@@ -653,6 +654,7 @@ a.screen-close.right, a.screen-confirm.right {
 
     div.top-bar {
         margin: 0 1em;
+        font-size: 1.3em;
 
         div {
             width: 100%;
@@ -1186,7 +1188,9 @@ hr.section-border {
     padding: 1.2em 1em;
 
     div.top-bar {
+        padding-top: 0.5em;
         a {
+            font-size: 1.3em;
             color: $primary;
         }
 
@@ -1196,7 +1200,7 @@ hr.section-border {
             font-family: TTNormsBold;
             text-transform: uppercase;
             margin-left: 1em;
-            margin-top: 3px;
+            margin-top: 5px;
         }
     }
 

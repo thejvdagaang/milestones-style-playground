@@ -415,7 +415,8 @@ a.screen-close.right, a.screen-confirm.right {
         font-size: 0.6em;
         display: inline-block;
         margin-right: 6em;
-        font-family: TTNormsBold; }
+        font-family: TTNormsBold;
+        margin-top: 8px; }
       .ms-details div.top-bar div:nth-child(2) span.type:before, .ms-milestones div.top-bar div:nth-child(2) span.type:before, .ms-merchants div.top-bar div:nth-child(2) span.type:before, .ms-merchant-details div.top-bar div:nth-child(2) span.type:before, .ms-notifications div.top-bar div:nth-child(2) span.type:before {
         content: '';
         display: inline-block;
@@ -461,7 +462,8 @@ a.screen-close.right, a.screen-confirm.right {
   width: 100%;
   margin-bottom: 1em; }
 .ms-product div.top-bar, .ms-content-story div.top-bar {
-  margin: 0 1em; }
+  margin: 0 1em;
+  font-size: 1.3em; }
   .ms-product div.top-bar div, .ms-content-story div.top-bar div {
     width: 100%; }
     .ms-product div.top-bar div a, .ms-content-story div.top-bar div a {
@@ -794,15 +796,18 @@ hr.section-border {
 
 .ms-checklist-details {
   padding: 1.2em 1em; }
-  .ms-checklist-details div.top-bar a {
-    color: #f99d28; }
-  .ms-checklist-details div.top-bar span {
-    position: absolute;
-    font-size: 0.8em;
-    font-family: TTNormsBold;
-    text-transform: uppercase;
-    margin-left: 1em;
-    margin-top: 3px; }
+  .ms-checklist-details div.top-bar {
+    padding-top: 0.5em; }
+    .ms-checklist-details div.top-bar a {
+      font-size: 1.3em;
+      color: #f99d28; }
+    .ms-checklist-details div.top-bar span {
+      position: absolute;
+      font-size: 0.8em;
+      font-family: TTNormsBold;
+      text-transform: uppercase;
+      margin-left: 1em;
+      margin-top: 5px; }
   .ms-checklist-details span {
     display: inline-block;
     margin: 0.8em 0; }
